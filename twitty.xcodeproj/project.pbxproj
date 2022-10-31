@@ -11,6 +11,8 @@
 		F367AACD291035EB00F2C060 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367AACC291035EB00F2C060 /* ContentView.swift */; };
 		F367AACF291035ED00F2C060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F367AACE291035ED00F2C060 /* Assets.xcassets */; };
 		F367AAD2291035ED00F2C060 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F367AAD1291035ED00F2C060 /* Preview Assets.xcassets */; };
+		F367AAE12910366300F2C060 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367AAE02910366300F2C060 /* FeedView.swift */; };
+		F367AAE4291036ED00F2C060 /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367AAE3291036ED00F2C060 /* TweetRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		F367AACC291035EB00F2C060 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F367AACE291035ED00F2C060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F367AAD1291035ED00F2C060 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F367AAE02910366300F2C060 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		F367AAE3291036ED00F2C060 /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				F367AACA291035EB00F2C060 /* twittyApp.swift */,
+				F367AAD8291035FD00F2C060 /* Model */,
 				F367AACC291035EB00F2C060 /* ContentView.swift */,
+				F367AADB2910360F00F2C060 /* Service */,
+				F367AADA2910360800F2C060 /* Extensions */,
+				F367AAD92910360500F2C060 /* Core */,
 				F367AACE291035ED00F2C060 /* Assets.xcassets */,
 				F367AAD0291035ED00F2C060 /* Preview Content */,
 			);
@@ -65,6 +73,76 @@
 				F367AAD1291035ED00F2C060 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F367AAD8291035FD00F2C060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F367AAD92910360500F2C060 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F367AADD2910362100F2C060 /* Feed */,
+				F367AADC2910361800F2C060 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F367AADA2910360800F2C060 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F367AADB2910360F00F2C060 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F367AADC2910361800F2C060 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F367AAE2291036E300F2C060 /* Tweets */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F367AADD2910362100F2C060 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F367AADF2910365400F2C060 /* ViewModels */,
+				F367AADE2910364F00F2C060 /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		F367AADE2910364F00F2C060 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F367AAE02910366300F2C060 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F367AADF2910365400F2C060 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F367AAE2291036E300F2C060 /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				F367AAE3291036ED00F2C060 /* TweetRowView.swift */,
+			);
+			path = Tweets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F367AACD291035EB00F2C060 /* ContentView.swift in Sources */,
+				F367AAE4291036ED00F2C060 /* TweetRowView.swift in Sources */,
+				F367AAE12910366300F2C060 /* FeedView.swift in Sources */,
 				F367AACB291035EB00F2C060 /* twittyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
